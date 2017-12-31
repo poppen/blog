@@ -1,0 +1,34 @@
+{{ range $p := (where .Site.Pages ".UniqueID" "!=" "") }}
+{{ if eq $p.Params.thumbnail nil }}
+.thumb-{{ $p.UniqueID }} {
+  display: none;
+}
+{{ else }}
+.thumb-{{ $p.UniqueID }} {
+  background-image: url({{ $.Site.BaseURL }}{{ $p.Params.thumbnail  }});
+}
+{{ end }}
+{{ end }}
+
+/***** Amazon Shortcode *****/
+div.amazon-shortcode-box {
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+}
+
+div.amazon-shortcode-box > div.amazon-shortcode-info {
+  padding: 0 0 0 0.5rem;
+}
+
+div.amazon-shortcode-info > p.amazon-shortcode-title {
+  margin: 0 0 0.5rem 0;
+}
+
+div.amazon-shortcode-info > p.amazon-shortcode-detail {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.2rem
+}

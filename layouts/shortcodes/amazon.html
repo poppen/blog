@@ -1,0 +1,39 @@
+{{- $asin := .Get "asin" -}}
+{{- $type := .Get "type" -}}
+{{- $json := getJSON .Site.Params.AmazonProductJsonBaseURL $asin -}}
+{{- $item := index $json.AmazonItems.Items 0 -}}
+{{- $title := $item.ItemAttributes.Title -}}
+
+<div class="amazon-shortcode-box">
+  <div class="amazon-shortcode-image">
+    <a href="{{ $item.DetailPageURL }}" name="amazon-shortcode" target="_blank">
+      <img src="{{ $item.MediumImage.URL }}"
+        alt="{{ $item.ItemAttributes.Title }}"
+        width="{{ $item.MediumImage.Width }}"
+        height="{{ $item.MediumImage.Height }}"></img>
+    </a>
+  </div>
+  <div class="amazon-shortcode-info">
+    <p class="amazon-shortcode-title">
+      <a href="{{ $item.DetailPageURL }}" name="amazon-shortcode" target="_blank">
+        {{ $title }}
+      </a>
+    </p>
+    {{ with $item.ItemAttributes.Author }}
+      <p class="amazon-shortcode-detail">著者：{{ . }}</p>
+    {{ end }}
+    {{ with $item.ItemAttributes.Director }}
+      <p class="amazon-shortcode-detail">監督：{{ . }}</p>
+    {{ end }}
+    {{ with $item.ItemAttributes.Actor }}
+      <p class="amazon-shortcode-detail">主演：{{ delimit . ", " }}</p>
+    {{ end }}
+    {{ with $item.ItemAttributes.Manufacturer }}
+      {{ if or ( eq $item.ItemAttributes.ProductGroup "Book") (eq $item.ItemAttributes.ProductGroup "eBooks") }}
+        <p class="amazon-shortcode-detail">出版社：{{ . }}</p>
+      {{ else }}
+        <p class="amazon-shortcode-detail">{{ . }}</p>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>

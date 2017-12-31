@@ -1,0 +1,23 @@
+baseURL = "https://blog.karashi.org"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+title = "poppen's blog"
+# disqusShortname = "username" # delete this to disable disqus comments
+# googleAnalytics = ""
+theme = "robust"
+
+hasCJKLanguage = true
+preserveTaxonomyNames = true
+enableRobotsTXT = true # generate robots.txt
+
+[params]
+    dateformat = "2006/01/02"
+    amazonProductJsonBaseUrl = "http://localhost:1323/items/"
+    css = ["/css/custom.css"]
+
+[params.author]
+    thumbnail = "images/author.jpg"
+    name = "poppen"
+    description = "<p>本を読んで、筋トレして、ゲームして、コンピュータをいじります。</p>"
+    twitter = "https://twitter.com/poppen"
+    github = "https://github.com/poppen"
