@@ -16,7 +16,7 @@ enableRobotsTXT = true # generate robots.txt
     css = ["/css/custom.css"]
 
 [params.author]
-    thumbnail = "images/author.jpg"
+    thumbnail = "/images/author.jpg"
     name = "poppen"
     description = "<p>本を読んで、筋トレして、ゲームして、コンピュータをいじります。</p>"
     twitter = "https://twitter.com/poppen"
