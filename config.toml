@@ -21,3 +21,4 @@ enableRobotsTXT = true # generate robots.txt
     description = "<p>本を読んで、筋トレして、ゲームして、コンピュータをいじります。</p>"
     twitter = "https://twitter.com/poppen"
     github = "https://github.com/poppen"
+    steam = "https://steamcommunity.com/id/poppen_jp/"
