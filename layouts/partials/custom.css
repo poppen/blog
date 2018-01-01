@@ -32,3 +32,8 @@ div.amazon-shortcode-info > p.amazon-shortcode-detail {
   font-size: 0.8rem;
   line-height: 1.2rem
 }
+
+/***** Robust *****/
+article.li {
+  height: auto;
+}
