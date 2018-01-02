@@ -2,6 +2,7 @@
 title: "Hugoでブログはじめました"
 date: 2018-01-01T19:05:30+09:00
 toc: true
+tags: ["hugo"]
 ---
 
 ## はじめに
