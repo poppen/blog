@@ -11,14 +11,69 @@ preserveTaxonomyNames = true
 enableRobotsTXT = true # generate robots.txt
 
 [params]
-    dateformat = "2006/01/02"
-    amazonProductJsonBaseUrl = "http://localhost:1323/items/"
-    css = ["/css/custom.css"]
+	dateformat = "2006/01/02"
+	amazonProductJsonBaseUrl = "http://localhost:1323/items/"
 
-[params.author]
-    thumbnail = "/images/author.jpg"
-    name = "poppen"
-    description = "<p>本を読んで、筋トレして、ゲームして、コンピュータをいじります。</p>"
-    twitter = "https://twitter.com/poppen"
-    github = "https://github.com/poppen"
-    steam = "https://steamcommunity.com/id/poppen_jp/"
+	author = "poppen"
+	description = "poppen's blog"
+	#big = ""
+
+	twitter = "poppen"
+	# facebook = "your_facebook_id"
+
+	enableRSS = true
+	enableToc = true
+
+	enableDisqus = false
+	disqusShortname = "your_disqus_short_name"
+
+	enableSummary = true
+	# Set the value to true if use description in post front matter replace content summary
+	useDescriptionReplaceSummary = false
+
+	enableGoogleAnalytics = false
+
+	enableTwitterCard = true
+	# The url for twitter card image, default is avatar.png in static/images directory
+	twitterCardImage = ""
+
+	# Add custom assets with their paths relative to the static folder
+	customCSS = ["/css/custom.css"]
+	customJS  = []
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	about = ""
+	archive = ""
+	subscribe = ""
+
+	olderPosts = ""
+	newerPosts = ""
+	copyright = ""
+
+	# show latest posts in single page
+	showLatestPosts = false
+	readMore = ""
+
+	# Share
+	enableShare = true
+	tweet = ""
+	share = ""
+
+	# 404 page
+	title404 = ""
+	subtitle404 = ""
+
+# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+iconFont = "font-awesome"
+# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+socialIconStyle = ""
+
+# Add additional social link entries underneath
+[social]
+	twitter-square = "https://www.twitter.com/poppen"
+	github-square = "https://www.github.com/poppen"
+	steam-square = "https://steamcommunity.com/id/poppen_jp"
