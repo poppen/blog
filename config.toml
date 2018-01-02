@@ -24,8 +24,8 @@ enableRobotsTXT = true # generate robots.txt
 	enableRSS = true
 	enableToc = true
 
-	enableDisqus = false
-	disqusShortname = "your_disqus_short_name"
+	enableDisqus = true
+	disqusShortname = "poppens-blog"
 
 	enableSummary = true
 	# Set the value to true if use description in post front matter replace content summary
