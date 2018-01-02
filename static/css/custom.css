@@ -1,14 +1,6 @@
-{{ range $p := (where .Site.Pages ".UniqueID" "!=" "") }}
-{{ if eq $p.Params.thumbnail nil }}
-.thumb-{{ $p.UniqueID }} {
-  display: none;
+#toc {
+  font-size: 90%;
 }
-{{ else }}
-.thumb-{{ $p.UniqueID }} {
-  background-image: url({{ $.Site.BaseURL }}{{ $p.Params.thumbnail  }});
-}
-{{ end }}
-{{ end }}
 
 /***** Amazon Shortcode *****/
 div.amazon-shortcode-box {
@@ -31,9 +23,4 @@ div.amazon-shortcode-info > p.amazon-shortcode-detail {
   margin: 0;
   font-size: 0.8rem;
   line-height: 1.2rem
-}
-
-/***** Robust *****/
-article.li {
-  height: auto;
 }
