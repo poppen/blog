@@ -4,7 +4,7 @@ defaultContentLanguage = "ja"
 title = "poppen's blog"
 # disqusShortname = "username" # delete this to disable disqus comments
 # googleAnalytics = ""
-theme = "robust"
+theme = "cactus-plus"
 
 hasCJKLanguage = true
 preserveTaxonomyNames = true
