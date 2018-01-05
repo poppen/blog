@@ -12,7 +12,6 @@ enableRobotsTXT = true # generate robots.txt
 
 [params]
 	dateformat = "2006/01/02"
-	amazonProductJsonBaseUrl = "http://localhost:1323/items/"
 
 	author = "poppen"
 	description = "poppen's blog"
