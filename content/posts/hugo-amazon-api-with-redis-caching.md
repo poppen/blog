@@ -25,7 +25,7 @@ Usage:
 
 このブログは[Netlify](https://www.netlify.com/)にホストしてあります。[^1]
 
-Netlifyはとても高機能な上に無料で使えるという涙が出るほど素晴しいサービスなのですが、当然ながらAmazon Product Amazon APIへの問い合わせとJSONへ変換してくれるサーバをNetlifyからアクセスできる場所に置かなければいけません。色々考えた末、こちらは[Heroku Container Registry](https://devcenter.heroku.com/articles/container-registry-and-runtime)でDockerコンテナとして動かしてみることにしました。[^2]
+Netlifyはとても高機能な上に無料で使えるという涙が出るほど素晴しいサービスなのですが、当然ながらAmazon Product Amazon APIへの問い合わせとJSONへ変換してくれるサーバはNetlifyからアクセスできる場所に置かなければいけません。色々考えた末、こちらは[Heroku Container Registry](https://devcenter.heroku.com/articles/container-registry-and-runtime)でDockerコンテナとして動かしてみることにしました。[^2]
 
 今までのエントリではAmazonへのリンクを張っていなかったこともあり、[amazon-product-json](https://github.com/poppen/amazon-product-json)をローカルで使っていましたが、すべてTOMLファイルを経由して設定する仕様のため、[Twelve-Factor App](https://12factor.net/ja/)的に使いにくいのが難点です。
 
