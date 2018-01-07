@@ -14,13 +14,10 @@ https://github.com/poppen/hugo-amazon-api
 
 Usage:
 
-```
+```shell
 % go get github.com/poppen/hugo-amazon-api
-
-% cd %GOPATH/src/github.com/poppen/hugo-amazon-api
-
+% cd $GOPATH/src/github.com/poppen/hugo-amazon-api
 % go build
-
 % ./hugo-amazon-api -access YOUR_ACCESS_KEY -secret YOUR_SECRET_KEY -tag YOUR_TAG -redis-url REDIS_URL(ex. redis://localhost:6379)
 ```
 
