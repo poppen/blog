@@ -1,79 +1,43 @@
-baseURL = "https://blog.karashi.org/"
-languageCode = "ja"
-defaultContentLanguage = "ja"
-title = "poppen's blog"
-# disqusShortname = "username" # delete this to disable disqus comments
-# googleAnalytics = ""
-theme = "cactus-plus"
+baseURL = "https://blog.karashi.org"
+languageCode = "ja-jp"
+title = "からい雑記"
+theme = "anubis"
+paginate = 3
 
-hasCJKLanguage = true
-preserveTaxonomyNames = true
-enableRobotsTXT = true # generate robots.txt
+disqusShortname = "poppens-blog"
+googleAnalytics = "UA-170299244-1"
+
+[author]
+name = "@poppen"
 
 [params]
-	dateformat = "2006/01/02"
-	amazonProductJsonBaseUrl = "http://localhost:1323/items/"
+author = "@poppen"
+description = "からいことが書いてあったりなかったりする雑記"
+paginationSinglePost = true
 
-	author = "poppen"
-	description = "poppen's blog"
-	#big = ""
+[menu]
 
-	twitter = "poppen"
-	# facebook = "your_facebook_id"
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 1
 
-	enableRSS = true
-	enableToc = true
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 2
 
-	enableDisqus = true
-	disqusShortname = "poppens-blog"
+[[menu.main]]
+name = "Archive"
+identifier = "archive"
+url = "/posts/"
+weight = 3
 
-	enableSummary = true
-	# Set the value to true if use description in post front matter replace content summary
-	useDescriptionReplaceSummary = false
+[taxonomies]
+category = "categories"
+tag = "tags"
 
-	enableGoogleAnalytics = false
-
-	enableTwitterCard = true
-	# The url for twitter card image, default is avatar.png in static/images directory
-	twitterCardImage = ""
-
-	# Add custom assets with their paths relative to the static folder
-	customCSS = ["/css/custom.css"]
-	customJS  = []
-
-	# The variables below are optionally too and can be used to
-	# translate or customize each string of the theme.
-
-	# Navigation links
-	home = ""
-	about = ""
-	archive = ""
-	subscribe = ""
-
-	olderPosts = ""
-	newerPosts = ""
-	copyright = ""
-
-	# show latest posts in single page
-	showLatestPosts = false
-	readMore = ""
-
-	# Share
-	enableShare = true
-	tweet = ""
-	share = ""
-
-	# 404 page
-	title404 = ""
-	subtitle404 = ""
-
-# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-iconFont = "font-awesome"
-# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-socialIconStyle = ""
-
-# Add additional social link entries underneath
-[social]
-	twitter-square = "https://www.twitter.com/poppen"
-	github-square = "https://www.github.com/poppen"
-	steam-square = "https://steamcommunity.com/id/poppen_jp"
+[markup.goldmark.renderer]
+unsafe = true

@@ -6,6 +6,8 @@ tags: ["hugo"]
 
 Hugoが生成するRSSは要約RSSですが、全文が含まれたFull Text RSSを有効化してみました。
 
+<!--more-->
+
 RSSの仕様がよく分からず、少し試行錯誤しましたが、とりあえず出来たのでメモしておきます。
 
 ## Full Text RSS有効化の方法

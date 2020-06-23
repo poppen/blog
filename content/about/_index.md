@@ -1,10 +1,13 @@
 ---
-title: "_Index"
-date: 2018-01-02T17:41:32+09:00
+title: "About me"
+date: 2020-06-22T17:41:32+09:00
 ---
 
-@poppen, Saitama, Japan
+# 書いている人
 
-本を読んで、筋トレをして、ゲームを遊んで、コンピュータをいじります。
+本を読んで、筋トレをして、ゲームを遊んで、コンピュータをいじります。20ウン年ぶりにTRPGに復帰しました。
 
-ご連絡はSNSにて。
+* [poppen@github](https://github.com/poppen)
+
+* [twitter](https://twitter.com/poppen)
+* [github](https://github.com/poppen)

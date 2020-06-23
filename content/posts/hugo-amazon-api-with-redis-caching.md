@@ -8,6 +8,8 @@ tags: ["hugo", "golang"]
 
 [hugo-amazon-api](https://github.com/upamune/hugo-amazon-api)からRedisを使えるようにしました。
 
+<!--more-->
+
 ## README
 
 https://github.com/poppen/hugo-amazon-api
