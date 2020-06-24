@@ -8,10 +8,10 @@ disqusShortname = "poppens-blog"
 googleAnalytics = "UA-170299244-1"
 
 [author]
-name = "@poppen"
+name = "poppen"
 
 [params]
-author = "@poppen"
+author = "poppen"
 description = "からいことが書いてあったりなかったりする雑記"
 paginationSinglePost = true
 images = ["site.png"]
