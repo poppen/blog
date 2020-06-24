@@ -14,6 +14,7 @@ name = "@poppen"
 author = "@poppen"
 description = "からいことが書いてあったりなかったりする雑記"
 paginationSinglePost = true
+images = ["site.png"]
 
 [menu]
 
